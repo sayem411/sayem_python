@@ -1,3 +1,4 @@
 print("Hello World")
-print("Sayem")
-print("Hello sayem")
+print("Sayem is my name.","My age is 21")
+print(25)
+print(25+40)
