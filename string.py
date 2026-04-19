@@ -16,6 +16,7 @@ print(str[0])
 print(str[1])
 print(str[2])
 
+#slicing
 # str[starting_index:ending_index]
 
 str="Almas Sayem"
@@ -23,4 +24,4 @@ print(str[1:4])
 print(str[0:len(str)])
 print(str[:5])
 print(str[6:])
-print(str[-3:-1])
+print(str[-3:-1]) 
