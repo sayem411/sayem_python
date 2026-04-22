@@ -29,14 +29,30 @@ num2=int(input("Enter Number2: "))
 num3=int(input("Enter Number1: "))
 if(num1>num2 and num1>num3):
     print("Max=",num1)
-elif(num2<num1 and num2<num3):
+elif(num2>num1 and num2>num3):
     print("Max=",num2)
 else:
     print("Max=",num3)
 #5.    Grading: 85 → A | 30 → Fail
-
+marks=int(input("Enter student marks:"))
+if(marks>=90):
+    grade="A"
+elif(marks>=80 and marks<90):
+    grade="B"
+elif(marks>=70 and marks<80):
+    grade="C"
+elif(marks>=60 and marks<70):
+    grade="D"
+else:
+    grade="Fail"
+print("The grade is:",grade)
 #6.    Leap Year: 2024 → Leap Year | 2023 → Not
+year = int(input("Enter year: "))
 
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap Year")
+else:
+    print("Not Leap Year")
 #7.    Divisibility: 55 → Divisible (by 5 & 11)
 
 #8.    Vowel/Consonant: a → Vowel | b → Consonant
