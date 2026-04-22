@@ -35,16 +35,16 @@ else:
     print("Max=",num3)
 #5.    Grading: 85 → A | 30 → Fail
 marks=int(input("Enter student marks:"))
-if(marks>=90):
+if(marks>=80):
     grade="A"
-elif(marks>=80 and marks<90):
-    grade="B"
 elif(marks>=70 and marks<80):
-    grade="C"
+    grade="B"
 elif(marks>=60 and marks<70):
+    grade="C"
+elif(marks>=50 and marks<60):
     grade="D"
 else:
-    grade="Fail"
+    grade="F"
 print("The grade is:",grade)
 #6.    Leap Year: 2024 → Leap Year | 2023 → Not
 year = int(input("Enter year: "))
@@ -54,7 +54,12 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
 else:
     print("Not Leap Year")
 #7.    Divisibility: 55 → Divisible (by 5 & 11)
+numb = int(input("Enter the number: "))
 
+if(numb % 5 == 0 and numb % 11 == 0):
+    print("Divisible")
+else:
+    print("Not divisible")
 #8.    Vowel/Consonant: a → Vowel | b → Consonant
 
 #9.    Case Detect: A → Uppercase | z → Lowercase
@@ -62,13 +67,38 @@ else:
 #10.    Profit/Loss: CP 100, SP 120 → Profit
 
 #11.    Temp Class: 35 → Hot | 25 → Cold
-
+temp=int(input("Enter temparature: "))
+if (temp >= 30):
+    print("Gorom")
+else:
+    print("Siter chodon");
 #12.    Electricity Bill: 120 units → 700
 #(First 100 units → 5 taka/unit
 #Next units → 10 taka/unit)
+unit=int(input("Enter unit: "))
+
+if (unit<=100):
+    bill=unit*5
+else:
+    bill=(100*5)+(unit-100)*10
+print("Bill=",bill)
 
 #13.    Triangle Valid: 3, 4, 5 → Valid | 1, 2, 10 → Invalid
+F=int(input("1st side: "))
+S=int(input("2nd side: "))
+T=int(input("3rd side: "))
 
-#14.    Calculator: 5 + 3 → 8 | 10 - 2 → 8
+if (F+S >T and F+T > S and S+T >F):
+    print("Valid Triangle")
+else:
+    print("Invalid Triangle")
+#14. Calculator: 5 + 3 → 8 | 10 - 2 → 8
 
-#15.    Pass/Fail: Marks 60, Atten. 60% → Fail (Req. 40 & 75%)
+#15. Pass/Fail: Marks 60, Atten. 60% → Fail (Req. 40 & 75%)
+marks=int(input("Enter marks: "))
+attendance=int(input("Enter attendance: "))
+
+if (marks >= 40 and attendance >= 75):
+    print("Pass")
+else:
+    print("Fail")
