@@ -27,6 +27,10 @@ print(rep*10)
 
 a,*b,c,d=num
 print(a,b,c,d)
+#Unpacking
+a=tuple("HelloWorld")
+for sayem in a:
+    print(sayem)
 
 #Built in function
 num2=(3,4,2,2,2,2,6,5,8)
