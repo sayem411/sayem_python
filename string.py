@@ -56,5 +56,9 @@ print(stg.lower())
 for i in stg:
     print(i,end="")
 
-
+num1 = 20
+num2 = 30
+print(f"{num1} + {num2} = {num1+num2}")
+print("Almas Sayem.",end = " ")
+print("01619031184")
 
