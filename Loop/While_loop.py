@@ -70,6 +70,11 @@ while n!=10:
     if correct==4:
         print("Congrats!You guess it right")
         break
+    else:
+        print("%d digit were guessed right"%correct)
+        n=int(input("Enter a 4 digit number"))
+else:
+    print("You quit the game")
     
 
 
