@@ -2,9 +2,10 @@ def welcome():
     print("Good Morning")
 
 def add(a,b):
-    print()
+    print(id(a),id(b))
     a=2
     b=3
+    print(id(a),id(b))
     total=a+b
     print("The sum is:",total)
 
@@ -30,6 +31,19 @@ def add(*a):
 
 add(10,20,30,40,50)
 
+#list
+def add(lst):
+    lst[2]=0
+lst=[0,1,2]
+print(lst)
+add(lst)
+print(lst)
 
+#return function
+def add(a,b):
+    total=a+b
+    return total
+result=add(10,20)
+print("The sum is:",result)
 
 
