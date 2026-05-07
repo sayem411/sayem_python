@@ -18,5 +18,13 @@ for i in range(0,21):
         sum+=i
 print(sum)
 
+#reverse using for loop
+n = int(input("Enter a number: "))
+reverse = 0
+for i in range(len(str(n))):  
+    reverse = reverse * 10 + n % 10
+    n = n // 10
+print(reverse)
+
 
 
