@@ -23,7 +23,21 @@ print(localtime.tm_year)
 print(time.ctime(epc))
 
 #mail transfer protocol
+import smtplib
 
+smtobj = smtplib.SMTP('smtp.gmail.com',587)
+smtobj.ehlo()
+smtobj.starttls()
+smtobj.login()
+
+#
+from os import path
+
+def createFile(dest):
+    if not (path.isfile(dest)):
+        f=open(dest,'w')
+        f.write("Welcome to Python scripting")
+        f.close()
 
 
 
