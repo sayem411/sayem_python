@@ -21,16 +21,8 @@ localtime=time.localtime(epc)
 print(localtime)
 print(localtime.tm_year)
 print(time.ctime(epc))
-"""
-#mail transfer protocol
-import smtplib
 
-smtobj = smtplib.SMTP('smtp.gmail.com',587)
-smtobj.ehlo()
-smtobj.starttls()
-smtobj.login()
-"""
-#
+#------------------------------
 from os import path
 
 def createFile(dest):
@@ -42,7 +34,23 @@ dest="/Users/md.assayem/sayem_python/Problem-Solving/Problem-Solving/sayem_pytho
 createFile(dest)
 print("File created")
 
+#mail transfer protocol
+import smtplib
 
+smtobj = smtplib.SMTP('smtp.gmail.com',587)
+smtobj.ehlo()
+smtobj.starttls()
+smtobj.login('mdassayem0@gmail.com','rrcx geox kpqo iouh')
+"""
+App password
+1. Google Account → Security
+2. 2-Step Verification start
+3. App Passwords → "Mail" select
+Generate  → get 16-digit password 
+ sitting this code-
+"""
+smtobj.sendmail("mdassayem0@gmail.com","253-35-349@diu.edu.bd",'Subject:SMTP check.\nNiloy dada ki obostha?')
+smtobj.quit()
 
 
 
