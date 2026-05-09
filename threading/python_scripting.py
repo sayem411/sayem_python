@@ -1,4 +1,4 @@
-#current working directory
+"""#current working directory
 import os
 
 def current_directory():
@@ -33,7 +33,7 @@ def createFile(dest):
 dest="/Users/md.assayem/sayem_python/Problem-Solving/Problem-Solving/sayem_python/sample.txt"
 createFile(dest)
 print("File created")
-
+"""
 #mail transfer protocol
 import smtplib
 
@@ -49,7 +49,7 @@ App password
 Generate  → get 16-digit password 
  sitting this code-
 """
-smtobj.sendmail("mdassayem0@gmail.com","253-35-349@diu.edu.bd",'Subject:SMTP check.\nNiloy dada ki obostha?')
+smtobj.sendmail("mdassayem0@gmail.com","253-35-649@diu.edu.bd",'Subject:Durjoiii.\nDurjoy dada boudir sathe dekha korchen?')
 smtobj.quit()
 
 

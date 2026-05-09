@@ -5,3 +5,5 @@ print(a.shape)
 
 b=np.arange(12).reshape(3,4)
 print(b)
+b.reshape(3,4)
+print(b)
