@@ -32,5 +32,5 @@ Cgpa = 3.95
 print("Our new student name is "+name)
 print(name+" live in Dhaka")
 print("He is currently",age,"years old")
-print("At the age of",age,"He has started to learn python")
-print(name+" has sorted",Cgpa,"in her secondary exam")
+print("At the age of",age,".","He has started to learn python")
+print(name+" has sorted",Cgpa,"in her secondary semester")
