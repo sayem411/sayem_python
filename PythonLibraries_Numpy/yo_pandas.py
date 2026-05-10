@@ -47,8 +47,22 @@ s5=s4.drop('e')
 print(s5)
 
 #Series operation
+arr1=[0,1,2,3,4,5,7]
+arr2=[6,7,8,9,5]
+s6=pd.Series(arr2)
+print(s6)
+s7=pd.Series(arr1)
+print(s7)
+s8=s6.add(s7)
+print(s8)
+s9=s6.div(s7)
+print(s9)
+print('median',s7.median())
+print('max',s7.max())
+print('min',s7.min())
 
-
+#18:32 simplilearn python for beginners
+#lesson 9
 
 
 
