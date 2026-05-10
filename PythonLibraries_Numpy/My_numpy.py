@@ -53,7 +53,16 @@ print('concatenation example:')
 print(np.char.add(['hello','hi'],['world','xyz']))
 print(np.char.multiply('hello\t',3))
 print(np.char.center('hello',20,fillchar='-'))
-
+print(np.char.capitalize('hello world'))
+print(np.char.title('how are you'))
+print(np.char.lower('HELLO'))
+print(np.char.upper(['python','data']))
+print(np.char.upper('python is easy'))
+print(np.char.split('python is easy'))
+print(np.char.splitlines('Hello\nhow are you?'))
+print(np.char.strip(['nina','admin','anika'],'a'))
+print(np.char.join([':','-'],['sayem','sayem']))
+print(np.char.replace('He is a good dancer','is','was'))
 
 
 
