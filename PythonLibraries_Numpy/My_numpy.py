@@ -30,8 +30,10 @@ print("Python list tool:",(time.time() -start)*1000)
 
 start = time.time()
 result=A1 +A2
-print(result)
-
+print("Python list tool:",(time.time() -start)*1000)
+#---------------------------------
+a=np.array([[1,2],[3,4],[5,6]])
+print(a)
 
 
 
