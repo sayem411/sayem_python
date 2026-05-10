@@ -6,13 +6,13 @@ print(25+33)
 print("Sayem")
 #Area
 #Triangle
-base = float(input("Enter base = \n"))
-height = float(input("Enter height = \n"))
+base = float(input("Enter base:"))
+height = float(input("Enter height:"))
 area = 0.5*base*height
-print(area)
+print("Area of a triangle:",area)
 
 #circle
-radius = float(input("Enter radius= \n"))
+radius = float(input("Enter radius: \n"))
 area = 3.1416*radius*radius
-print("Area of circle", area)
+print("Area of circle:", area)
 
