@@ -37,7 +37,7 @@ else:
     print(num3)
 #Logical2
 #vowel/consonent
-ch = 'e'
+ch =input("Enter letter:")
 if ch =='a' or ch =='e' or ch =='i' or ch =='o' or ch =='u':
     print("Vowel")
 else:

@@ -1,6 +1,6 @@
 marks=int(input("Enter student marks:"))
 if(marks>=90):
-    grade="A"
+    grade="A+"
 elif(marks>=80 and marks<90):
     grade="B"
 elif(marks>=70 and marks<80):
@@ -10,7 +10,7 @@ else:
 print("The grade is:",grade)
 
 #grade
-marks = 89
+marks=int(input("Enter student marks:"))
 if marks>=80:
     print("A+")
 

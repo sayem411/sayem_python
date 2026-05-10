@@ -7,7 +7,7 @@ if(i<25):
 else:
     print("i is greater than 25")
 
-age=21
+age=16
 if(age==18):
     print(" 1st step to apply for license")
 elif(age>18):
