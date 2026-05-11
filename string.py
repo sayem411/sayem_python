@@ -53,9 +53,10 @@ print(str.rpartition(" a "))
 stg="Simplilearn"
 print(stg.upper())
 print(stg.lower())
+
 for i in stg:
     print(i,end="")
-
+#--------------------
 num1 = 20
 num2 = 30
 print(f"{num1} + {num2} = {num1+num2}")
