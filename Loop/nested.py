@@ -11,29 +11,31 @@ for i in range(1,n+1):
         print(j,end="")
     print()
 #list sum
-r=int(input("Enter number of rows:"))
-c=int(input("Enter number of Columns:"))
-a=[]
-val=[]
-for i in range(0,r):
-    for j in range(0,c):
-        val.insert(j,int(input("Enter the %d * %d element" %(i,j))))
-    a.insert(i,val)
-    val=[]
-b=[]
+r=int(input("Enter number of rows: "))
+c=int(input("Enter number of columns: "))
 
-for i in range(0,r):
-    for j in range(0,c):
-        val.insert(j,int(input("Enter the %d * %d element" %(i,j))))
-    b.insert(i,val)
+a=[]
+for i in range(r):
     val=[]
-sum=[]
-for i in range(0,r):
-    for j in range(0,c):
-        val.insert(j,a[i][j]+b[i][j])
-    sum.insert(i,val)
+    for j in range(c):
+        val.append(int(input("Enter a[%d][%d]:"%(i,j))))
+    a.append(val)
+
+b=[]
+for i in range(r):
     val=[]
-print(sum)
+    for j in range(c):
+        val.append(int(input("Enter b[%d][%d]:"%(i,j))))
+    b.append(val)
+
+result=[]
+for i in range(r):
+    val=[]
+    for j in range(c):
+        val.append(a[i][j]+b[i][j])
+    result.append(val)
+
+print("Sum =",result)
 
 
 
