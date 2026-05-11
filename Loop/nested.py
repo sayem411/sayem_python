@@ -19,6 +19,7 @@ for i in range(0,r):
     for j in range(0,c):
         val.insert(j,int(input("Enter the %d * %d element" %(i,j))))
     a.insert(i,val)
+    val=[]
 b=[]
 
 for i in range(0,r):
