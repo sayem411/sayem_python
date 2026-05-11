@@ -41,6 +41,10 @@ try:
 except IndexError:
     print(length)
 
+#length of a list 
+x = [1, 2.3, "Simplilearn"]
+print(len(x)) 
+
 #pattern printed
 n = int(input("Enter a number: "))
 i=1
