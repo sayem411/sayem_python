@@ -64,5 +64,43 @@ print('min',s7.min())
 #18:32 simplilearn python for beginners
 #lesson 9
 
+#Create dataframe
+dates=pd.date_range('today',periods=6)
+print(dates)
+num_arr=np.random.randn(6,4)
+print(num_arr)
+
+columns=['A','B','C','D']
+df1=pd.DataFrame(num_arr,index=dates,columns=columns)
+print(df1)
+
+#Create dataframe with dictionary array
+data={
+    'animel':['cat','cat','snake','dog','dog','cat','snake','cat','dog','dog'],
+    'age':[2.5,3,0.5,np.nan,7,3,5,3,7,8],'visits':[1,3,2,3,2,3,1,1,2,1],
+    'priority':['yes','yes','no','yes','no','no','yes','no','no','yes']
+    }
+labels=['a','b','c','d','e','f','g','h','i','j']
+df2=pd.DataFrame(data,index=labels)
+print(df2)
+
+print(df2.dtypes)
+print(df2.head(2))
+print(df2.tail(2))
+print(df2.index)
+print(df2.columns)
+print(df2.values)
+print(df2.describe())
+print(df2.T)
+print(df2.sort_values(by='age'))
+
+#Slicing dataframe
+print(df2.sort_values(by='age')[1:3])
+
+#query dataframe by tag
+print(df2[['age','visits']])
+
+
+
 
 
