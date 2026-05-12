@@ -61,9 +61,6 @@ print('median',s7.median())
 print('max',s7.max())
 print('min',s7.min())
 
-#18:32 simplilearn python for beginners
-#lesson 9
-
 #Create dataframe
 dates=pd.date_range('today',periods=6)
 print(dates)
@@ -99,8 +96,24 @@ print(df2.sort_values(by='age')[1:3])
 
 #query dataframe by tag
 print(df2[['age','visits']])
+print(df2.iloc[1:3])
+df3=df2.copy()
+print(df3)
 
+print(df3.isnull())
 
+df3.loc['f','age']=1.5
+print(df3)
+
+print(df3.sum())
+
+string=pd.Series(['A','C','D','Aaa','Bbb',np.nan,'CAS','cow','owl'])
+print(string)
+print(string.str.lower())
+print(string.str.upper())
+
+#38:57s simplilearn python for beginners
+#lesson 9
 
 
 
