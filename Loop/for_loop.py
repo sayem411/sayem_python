@@ -10,7 +10,12 @@ for i in range(1,20,2):
     print(i)
 for i in range(0,20,2):
     print(i)
-
+#factorial
+n = int(input("Enter a number: "))
+product = 1
+for i in range(1, n+1):
+    product*= i
+print(product)
 #sum using for loop
 sum=0
 for i in range(0,21):
