@@ -117,5 +117,22 @@ print(string.str.upper())
 
 
 #Operation for Data Frame missing values
+df4=df3.copy()
+print(df4)
+print(df4.fillna(4))
 
+meanAge=df4['age'].mean()
+print(df4['age'].fillna(meanAge))
+
+df5=df3.copy()
+print(df5.dropna(how='any'))
+
+#Dataframe file operations
+df3.to_csv('animal.csv')
+df_animal=pd.read_csv('animal.csv')
+print(df_animal.head(3))
+
+df3.to_excel('animal.xlsx',sheet_name='Sheet1')
+df_animal2=pd.read_excel('animal.xlsx','Sheet1',index_col=None,na_values=['NA'])
+print(df_animal2)
 
