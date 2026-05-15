@@ -25,3 +25,14 @@ plt.title('Info')
 plt.ylabel('Y axis')
 plt.xlabel('X axis')
 plt.show()
+
+
+
+
+
+
+
+
+
+
+

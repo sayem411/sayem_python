@@ -35,7 +35,10 @@ print(num)
 var1=['a','s','d','f','g']
 var1.sort()
 print(var1)
+var1.sort(reverse=True)
+print(var1)
 
+print(var1.reverse())
 #Build-in-function with list
 x=[9,17,14,4,90,55]
 print(len(x))
@@ -44,6 +47,16 @@ print(max(x))
 print(sum(x))
 print(sum(x)/len(x))
 
+#Movies project
+movies=[]
+mov1=input("Enter 1st movies")
+mov2=input("Enter 2nd movies")
+mov3=input("Enter 3rd movies")
+ 
+movies.append(mov1)
+movies.append(mov2)
+movies.append(mov3)
+print(movies)
 
 
 

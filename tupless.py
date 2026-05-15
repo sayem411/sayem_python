@@ -53,12 +53,15 @@ tpl[0].append('d')
 print(tpl)
 tpl[0].remove('d')
 print(tpl)
+"""
 #Unpacking
 p=tuple("HelloWorld")
 for i in p:
     print(i)
-
-
+"""
+tpl=(1,2,3,4,5)
+print(tpl.index(2))
+print(tpl.count(2))
 
 
 
