@@ -49,7 +49,7 @@ def Dlitre():
 
 def kamount():
     print("-----MONEY OF KEROSENE-----")
-    litre1=100
+    litre1=110
     while True:
         print("1 Litre kerosene=",litre1,'TK')
         money=int(input("Enter money:"))
@@ -61,7 +61,7 @@ def kamount():
             print("Insufficient money")
 def klitre():
      print("-----LITRE OF KEROSENE-----")
-     litre1=100
+     litre1=110
      print("1 Litre kerosene=",litre1,'TK')
      litre=int(input("Enter litre:"))
      tlitre=litre1*litre
