@@ -1,8 +1,8 @@
-#Fuel Price and litre Calculator
+#Fuel Management System
 def menu():
     print("1.Oil")
-    print("2.Dizel")
-    print("3. Carosin")
+    print("2.Diesel")
+    print("3.Kerosene")
 
 def Oamount():
     print("-----MONEY OF OIL-----")
@@ -26,46 +26,46 @@ def Olitre():
 
 
 def Damount():
-    print("-----MONEY OF DIZEL-----")
+    print("-----MONEY OF DIESEL-----")
     litre1=120
     while True:
-        print("1 Litre Dizel=",litre1,'TK')
+        print("1 Litre Diesel=",litre1,'TK')
         money=int(input("Enter money:"))
         total=money/litre1
         if money>=100:
-         print(f"Total litre of Dizel:{total:.4}",'Litre')
+         print(f"Total litre of Diesel:{total:.4}",'Litre')
          break
         else:
             print("Insufficient money")
 def Dlitre():
-     print("-----LITRE DIZEL-----")
+     print("-----LITRE DIESEL-----")
      litre1=120
-     print("1 Litre Dizel=",litre1,'TK')
+     print("1 Litre Diesel=",litre1,'TK')
      litre=int(input("Enter litre:"))
      tlitre=litre1*litre
-     print("Total money of Dizel:",tlitre,'TK')
+     print("Total money of Diesel:",tlitre,'TK')
 
 
 
-def Camount():
-    print("-----MONEY OF CAROSIN-----")
+def kamount():
+    print("-----MONEY OF KEROSENE-----")
     litre1=100
     while True:
-        print("1 Litre Carosin=",litre1,'TK')
+        print("1 Litre kerosene=",litre1,'TK')
         money=int(input("Enter money:"))
         total=money/litre1
         if money>=100:
-         print(f"Total litre of Carosin:{total:.4}",'Litre')
+         print(f"Total litre of kerosene:{total:.4}",'Litre')
          break
         else:
             print("Insufficient money")
-def Clitre():
-     print("-----LITRE OF CAROSIN-----")
+def klitre():
+     print("-----LITRE OF KEROSENE-----")
      litre1=100
-     print("1 Litre Carosin=",litre1,'TK')
+     print("1 Litre kerosene=",litre1,'TK')
      litre=int(input("Enter litre:"))
      tlitre=litre1*litre
-     print("Total money of Carosin:",tlitre,'TK')
+     print("Total money of kerosene:",tlitre,'TK')
 
 
 def main():
@@ -80,8 +80,8 @@ def main():
               Damount()
               Dlitre()
         elif choice == "3":
-                 Camount()
-                 Clitre()
+                 kamount()
+                 klitre()
         else:
             print("Invalid choice!")
             break
