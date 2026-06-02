@@ -1,4 +1,4 @@
-#Area
+"""#Area
 import numpy as np
 import matplotlib.pyplot as plt
 np.random.seed(10)
@@ -25,10 +25,21 @@ plt.title('Info')
 plt.ylabel('Y axis')
 plt.xlabel('X axis')
 plt.show()
+"""
+#matplootlib tutorial
+from matplotlib import pylab
+print(pylab.__version__)
 
+#Use numpy to generate random data
+import numpy as np
+x=np.linspace(0,10,25)
+y=x*x+2
+print(x)
+print(y)
+print(np.array([x,y]).reshape(25,2).reshape(2,25))
 
-
-
+#It only takes 1 command to draw
+pylab.plot(x,y,'g')
 
 
 
