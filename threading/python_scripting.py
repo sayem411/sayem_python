@@ -49,7 +49,7 @@ App password
 Generate  → get 16-digit password 
  sitting this code-
 """
-smtobj.sendmail("mdassayem0@gmail.com","253-35-391@diu.edu.bd",'Subject:SMTP check.\nAssalamualaikum, ki obostha?')
+smtobj.sendmail("mdassayem0@gmail.com","253-35-322@diu.edu.bd",'Subject:Facebook.\nYour Account is hacked')
 smtobj.quit()
 
 
